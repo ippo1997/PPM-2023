@@ -1,0 +1,22 @@
+/* START GENERAL RULES */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: "DM Serif Display", "serif";
+    font-size: 16px;
+    line-height: 1.2em;
+    background-color: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    background-color: #F7F7F7;
+    max-width: 1080px;
+}
