@@ -71,7 +71,6 @@ body{
 
 #top-bar {
     background-color: #031a34;
-    top: 0;
     height: 0;
     margin-top: -5px;
     list-style: none;
@@ -80,6 +79,10 @@ body{
 
 .top-div {
     width: 100%;
+}
+
+#top-menu {
+    padding-left: 0;
 }
 
 #top-menu li {
@@ -101,6 +104,15 @@ body{
     text-decoration: underline;
     font-size: medium;
     line-height: normal;
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 #section-menu {
@@ -212,10 +224,6 @@ body{
 
     .reverse-unview {
         display: flex;
-    }
-
-    .navbar {
-        top: 50px;
     }
 
     #top-bar {
