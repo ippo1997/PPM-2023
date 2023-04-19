@@ -71,14 +71,36 @@ body{
 
 #top-bar {
     background-color: #031a34;
+    top: 0;
     height: 0;
+    margin-top: -5px;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-#top-menu li{
-    color: #FFFFFF;
+.top-div {
+    width: 100%;
+}
+
+#top-menu li {
     list-style: none;
     text-decoration: none;
+    margin-top: -7px;
+    box-sizing: border-box;
+
+}
+
+#top-menu li a:link,
+#top-menu li a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
     padding: 0 15px 0 15px;
+}
+
+#top-menu li a:hover{
+    text-decoration: underline;
+    font-size: medium;
+    line-height: normal;
 }
 
 #section-menu {
@@ -124,14 +146,15 @@ body{
 
 .right-menu li a:link,
 .right-menu li a:visited{
-    color: #696969;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 15px 15px 0 0;
     display: block;
 }
 
 .right-menu li a:hover{
-    color: black;
+    font-size: medium;
+    margin: 0;
 }
 
 .right-menu li a.brand{
@@ -142,12 +165,11 @@ body{
     background-position: 0 12px;
 }
 
-.right-menu li.active a{
-    color: black;
-}
-
 .right-menu li.highlighted a{
-    color: #8e0000;
+    background-color: #ffe500;
+    color: #000000;
+    padding: 5px;
+    margin: 10px 10px 0 0;
 }
 
 .button-color{
@@ -211,8 +233,12 @@ body{
         display: flex;
     }
 
+    .navbar {
+        top: 50px;
+    }
+
     #top-bar {
-        height: auto;
+        height: 50px;
     }
 
     #user {
