@@ -8,9 +8,12 @@
 body{
     height: 100%;
     margin: 0;
-    font-family: "DM Serif Display", "serif";
+    font-family: "DM Serif Display", serif;
     font-size: 16px;
-    line-height: 1.2em;
+    font-weight: 400;
+    color: #212529;
+    line-height: 1.5;
+    text-align: left;
     background-color: #FFFFFF;
 }
 
@@ -36,13 +39,17 @@ body{
     display: none;
 }
 
+#reverse-unview {
+    display: none;
+}
+
 /* END GENERAL RULES */
 
 /* START NAVIGATION RULES */
 
 .navbar{
     background-color: #073e7c;
-    font-family: "Roboto Light", Roboto, "sans-serif";
+    font-family: "DM Sans",sans-serif;
     min-height: 120px;
     font-size: 12px;
     position: sticky;
@@ -51,13 +58,39 @@ body{
     justify-content: space-between;
 }
 
-.always-visible{
-    position: absolute;
-}
-
 .front-menu {
     display: flex;
     flex-direction: row;
+}
+
+.left-menu{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#left-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#left-list li {
+    float: left;
+    border-left: 2px dotted;
+    border-color: #FFFFFF;
+}
+#left-list li a:link,
+#left-list li a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
 }
 
 /* END NAVIGATION RULES */
@@ -79,7 +112,7 @@ body{
 
     .navbar {
         background-color: #073e7c;
-        font-family: "Roboto Light", Roboto, "sans-serif";
+        font-family: "DM Sans",sans-serif;
         min-height: unset;
         width: 100%;
         border-bottom: 1px solid #BDBDBD;
@@ -87,6 +120,10 @@ body{
         position: fixed;
         display: flex;
         justify-content: space-between;
+    }
+
+    #reverse-unview {
+        display: flex;
     }
 
 }
