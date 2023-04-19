@@ -15,12 +15,39 @@
 
 <body>
 
-    <nav class="navbar unview">
-        <div class="left-menu">
-            <p>Temi del giorno</p>
+    <nav class="reverse-unview navbar" id="top-bar">
+        <div class="front-menu left-menu reverse-unview">
+            <ul class="reverse-unview" id="top-menu">
+                <li><a href="#"  title="Privacy">PRIVACY</a></li>
+                <li><a href="#" title="Termini e condizioni">TERMINI</a></li>
+                <li><a href="#" title="REDAZIONE">REDAZIONE</a></li>
+                <li><a href="#" title="FONDAZIONE FQ">FONDAZIONE FQ</a></li>
+                <li><a href="#" title="ABBONATI">ABBONATI</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar">
+        <div class="front-menu left-menu">
+            <div id="section-menu">
+                <ul style="list-style-type: none">
+                    <li class="infobox"><a href="#" title="Info">
+                        <div onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <script>
+                            function myFunction(x) {
+                                x.classList.toggle("change");
+                            }
+                        </script></a>
+                    </li>
+                </ul>
+            </div>
             <div>
-                <ul id="left-list" style="list-style-type: none">
-                    <li> <a href="#" title="left 1">Edizione digitale</a></li>
+                <ul class="unview" id="left-list">
+                    <li style="border-left-style: none"><a href="#"  title="Logo"><img src= "https://unsplash.it/23/23" alt=""/></a></li>
+                    <li style="border-left-style: none"> <a href="#" title="left 1">Edizione digitale</a></li>
                     <li> <a href="#" title="left 2">Newsletter</a></li>
                     <li> <a href="#" title="left 3">Segnala</a></li>
                     <li> <a href="#" title="left 4">Necrologie</a></li>
@@ -28,34 +55,17 @@
                 </ul>
             </div>
         </div>
-        <div class="logo" id="reverse-unview">
-            <a href="#"  title="Logo"><img src= "https://unsplash.it/250/100" alt=""/></a>
+        <div class="logo">
+            <a href="#"  title="Logo"><img src= "https://unsplash.it/128/28" alt=""/></a>
         </div>
         <div class="front-menu">
-            <ul id="menu-primary" style="list-style-type: none">
-                <li class="infobox"><a href="#" title="Info">
-                    <div class="container" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                    <script>
-                        function myFunction(x) {
-                            x.classList.toggle("change");
-                        }
-                    </script></a>
-                </li>
-                <li>
+            <ul class="right-menu" id="user" style="list-style-type: none">
+                <li class="reverse-unview">
                     <a href="#"  title="Search" onclick='alert("You have been redirected to another site")'>
-                        <img
-                                id="search"
-                                src="./images/search-svgrepo-com.svg"
-                                alt="Search"
-                                height="21px"
-                                width="21px" />
+                        <img src= "https://unsplash.it/22/22" alt=""/>
                     </a>
                 </li>
-                <li class="active"> <a href="#"  title="Accedi" onclick='alert("You have been redirected to another site")'>Accedi</a></li>
+                <li class="active unview"> <a href="#"  title="Accedi" onclick='alert("You have been redirected to another site")'>Accedi</a></li>
                 <li class="highlighted unview"> <a href="#" title="Abbonati" onclick='alert("You have been redirected to another site")'>Abbonati</a></li>
                 <li class="unview"> <a href="#" title="Shop" onclick='alert("You have been redirected to another site")'>Shop</a></li>
                 <li class="unview"> <a href="#" title="FondazioneFQ" onclick='alert("You have been redirected to another site")'>FondazioneFQ</a></li>
@@ -71,7 +81,7 @@
         <br>
         <h1>The quick brown fox</h1>
         <br>
-        <h1>Lorem Ipsum</h1>
+        <h1>L'Arena</h1>
         <br>
         <h1>Lorem Ipsum</h1>
         <br>
