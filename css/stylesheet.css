@@ -204,6 +204,22 @@ body{
 
 /* START ARTICLES RULES */
 
+header {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 15px 70px;
+    display: block;
+}
+
+.title {
+    padding-bottom: 8px;
+    border-bottom: 5px solid;
+    text-align: center;
+    display: flex;
+}
+
 /* END ARTICLES RULES */
 
 /* START FOOTER RULES */
