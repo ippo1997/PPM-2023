@@ -209,16 +209,43 @@ header {
     margin-top: 0;
     margin-left: -70px;
     margin-right: -70px;
-    padding: 15px 70px;
+    padding: 30px 70px;
     display: block;
 }
 
 .title {
     padding-bottom: 8px;
     border-bottom: 5px solid;
+    position: relative;
     text-align: center;
     display: flex;
 }
+
+.degrees {
+    font-size: 35px;
+}
+
+.title h1 {
+    margin: -5px 0 0 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.title a {
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.day {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    font-family: 'DM Serif Display',serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 
 /* END ARTICLES RULES */
 
