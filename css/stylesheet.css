@@ -262,6 +262,10 @@ body{
         max-width: 606px;
     }
 
+    .strong-unview {
+        display: none;
+    }
+
 }
 
 /* END MOBILE RULES*/
