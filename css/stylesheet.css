@@ -40,8 +40,9 @@ body{
     justify-content: space-between;
 }
 
-.reverse-unview {
-    display: none;  /* eliminare se non usato */
+.reverse-unview,
+.reverse-strong-unview {
+    display: none;
 }
 
 /* END GENERAL RULES */
@@ -263,16 +264,15 @@ header {
     padding: 0;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: baseline;
 }
 
 .hot-topics li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-align: center;
     width: 100%;
 }
@@ -290,18 +290,190 @@ header {
     margin-right: 10px;
 }
 
-.grey {
+.grey a {
     color: #666666
 }
 
-.red {
-    background-color: #ff0000;
+.grey a:hover{
+    background-color: #cecece;
+    color:#FFFFFF
+}
+
+.red a {
+    background-color: #FF0000;
+    color:#FFFFFF;
+}
+
+.red a:hover{
+    background-color: #ffffff;
+    color: #FF0000;
+}
+
+.blue a{
+    background-color: #073e7c;
     color: #FFFFFF;
 }
 
-.blue{
-    background-color: #073e7c;
+.red-bar-container{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.red-bar-left{
+    float: left;
+    background-color: #E50901;
+    width: 90%;
+    display: flex;
+    padding: 5px 5px 3px 5px;
+}
+
+.red-bar-right{
+    float: right;
+    background-color: #E50901;
+    width: 10%;
+    padding: 5px 5px 3px 5px;
+    min-width: 100px;
+}
+
+.red-bar-left p,
+.red-bar-right a {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.white-bar {
+    background-color: #FFFFFF;
+    height: 200px;
+    margin: 0 15px 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-page,
+.last-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.big-article {
+    flex: 0 0 66.7%;
+    max-width: 66.7%;
+    padding-left: 0;
+    order: 1;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+aside {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+    padding-right: 0;
+    order: 2;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    display: block;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.05);
+    border-radius: 2px;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.image {
+    order: 2;
+    position: relative;
+}
+
+.a-title {
+    order: 1;
+    padding: 20px 30px;
+}
+
+.subject {
+    font-family: 'DM Sans',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #000;
+    font-size: 13px;
+    line-height: 1.25;
+    margin-bottom: 3px;
+}
+
+.subject img {
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: DMSerifDisplay, serif;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+h2 a,
+h3 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.author {
+    font-family: 'DM Sans',sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+h4 a {
+    text-decoration: none;
+    color: #000000;
+    font-family: DMSerifDisplay, serif;
+}
+
+.box{
+    position: sticky;
+    top: 63px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.ad-container{
+    position: relative;
+    text-align: center;
+    font-family: Impact, serif;
+}
+
+.ad{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* END ARTICLES RULES */
@@ -422,6 +594,14 @@ footer p{
         padding-right: 30px;
     }
 
+    aside {
+        display: none;
+    }
+
+    #last-1{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 828px) {
@@ -433,6 +613,27 @@ footer p{
     }
 
     .strong-unview {
+        display: none;
+    }
+
+    .big-article {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #last-2{
+        display: none;
+    }
+
+    .reverse-strong-unview {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+
+    .s-unview {
         display: none;
     }
 
