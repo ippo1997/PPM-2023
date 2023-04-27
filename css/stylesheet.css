@@ -378,24 +378,6 @@ header {
     align-content: flex-start;
 }
 
-.small-article-left {
-    width: calc(50% - 15px);
-    margin: 0 30px 30px 0;
-    position: relative;
-    display: block;
-}
-
-.small-article-rigt {
-    width: calc(50% - 15px);
-    margin: 0 0 30px 0;
-    position: relative;
-    display: block;
-}
-
-.s-title {
-    padding: 15px 15px;
-}
-
 aside {
     flex: 0 0 33.3%;
     max-width: 33.3%;
